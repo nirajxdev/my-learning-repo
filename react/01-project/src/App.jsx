@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import ProfileCard from "./components/ProfileCard";
 import ProductCard from "./components/ProuductCard";
+import Counter from "./components/Counter";
+
 
 
 function App() {
@@ -53,6 +55,8 @@ function App() {
       image=""
       inStock={true}
     />
+    <Counter />
+
     </>
   )
 }
