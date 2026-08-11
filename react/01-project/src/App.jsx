@@ -3,6 +3,8 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
+import ProfileCard from "./components/ProfileCard";
+
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
     <Hero />
     <Skills />
     <About />
+    <ProfileCard />
     <Footer />
   
     </>
