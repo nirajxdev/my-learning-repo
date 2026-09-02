@@ -66,15 +66,14 @@ app.post("/notes", (req, res) => {
   const username = decoded.username;
 
   if (!username) {
-    res.status(403).json({
+    return res.status(403).json({
       message: "malformed token"
     })
-    return;
   }
 
-
   const note = req.body.note;
-  notes.push(note);
+  notes.push({ ...note, username: username });
+
 
   res.json({
     message: "done"
@@ -94,10 +93,9 @@ app.get("/notes", (req, res) => {
   const username = decoded.username;
 
   if (!username) {
-    res.status(403).json({
+    return res.status(403).json({
       message: "malformed token"
     })
-    return;
   }
 
   const userNotes = notes.filter(note => note.username === username);
