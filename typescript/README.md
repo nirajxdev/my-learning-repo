@@ -1,15 +1,16 @@
-# typescript
+# typescript 🦕
 
-To install dependencies:
+> learning typescript without pretending i understand everything.
 
-```bash
-bun install
-```
+this folder contains my typescript journey — experiments, mistakes, random ideas, and things that finally made sense.
 
-To run:
+## what's happening here?
 
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.4.2. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+- learning typescript from scratch
+- writing way too many types
+- fighting the compiler
+- breaking things
+- fixing things
+- taking notes
+- building small experiments
+- slowly becoming friends with `tsc`
